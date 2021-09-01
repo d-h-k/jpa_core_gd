@@ -98,10 +98,11 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member(99L, "vector");
+            Member member = new Member(199L, "sector");
 
             System.out.println("== before");
             em.persist(member);
+
             System.out.println("== after");
             tx.commit();
 
