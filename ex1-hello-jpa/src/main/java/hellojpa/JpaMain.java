@@ -15,10 +15,10 @@ public class JpaMain {
 
         // code
         //t1_goodToGo(em);
-        //t2_find(em);
+        t2_find(em); // 2번만 여러번 실행해도 에러가 안남
         //t3_AutoUpdate(em);
         //t4_intro_JPQL(em);
-        t5_seq(em);
+        //t5_seq(em);
 
         //디비 종료
         em.close();
@@ -98,7 +98,7 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member(199L, "sector");
+            Member member = new Member(201L,"hong");
 
             System.out.println("== before");
             em.persist(member);
